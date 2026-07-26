@@ -1,7 +1,7 @@
-import { Settings2 } from "lucide-react";
 import { aboutItems } from "@/data/about";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FeatureItem } from "@/components/shared/FeatureItem";
+import aboutIllustration from "@/assets/images/about/about-illustration.png";
 
 export function AboutSection() {
   return (
@@ -15,14 +15,16 @@ export function AboutSection() {
             ))}
           </div>
 
-          {/* PLACEHOLDER — replace with the real decorative illustration
-              exported from Figma. Hidden below md to match the mobile
-              export, which doesn't show this graphic. */}
           <div
             aria-hidden="true"
-            className="hidden items-center justify-center rounded-xl border border-dashed border-surface-border bg-surface-raised-2 text-text-muted md:flex"
+            className="hidden items-center justify-center md:flex"
           >
-            <Settings2 className="h-16 w-16" strokeWidth={1} />
+            <img
+              src={aboutIllustration}
+              alt=""
+              className="h-auto w-full max-w-md object-contain"
+              draggable={false}
+            />
           </div>
         </div>
       </div>
