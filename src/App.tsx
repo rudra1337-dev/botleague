@@ -6,6 +6,7 @@ import { AboutSection } from "@/sections/About";
 import { CategoriesSection } from "@/sections/Categories";
 import { DisciplinesSection } from "@/sections/Disciplines";
 import { WhyRegisterSection } from "@/sections/WhyRegister";
+import { EcosystemSection } from "@/sections/Ecosystem";
 import { SponsorsSection } from "@/sections/Sponsors";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <CategoriesSection />
       <DisciplinesSection />
       <WhyRegisterSection />
+      <EcosystemSection />
       <SponsorsSection />
     </RootLayout>
   );
