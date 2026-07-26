@@ -3,6 +3,7 @@ import { HeroSection } from "@/sections/Hero";
 import { AboutSection } from "@/sections/About";
 import { CategoriesSection } from "@/sections/Categories";
 import { DisciplinesSection } from "@/sections/Disciplines";
+import { WhyRegisterSection } from "@/sections/WhyRegister";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <AboutSection />
       <CategoriesSection />
       <DisciplinesSection />
+      <WhyRegisterSection />
     </RootLayout>
   );
 }
