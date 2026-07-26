@@ -24,7 +24,7 @@ export function FeatureItem({
     <>
       {variant === "numbered" && number !== undefined && (
         <span className="mb-3 block text-2xl font-bold text-brand-red">
-          {String(number).padStart(2, "0")}
+          {String(number).padStart(1, "0")}.
         </span>
       )}
 
@@ -43,7 +43,7 @@ export function FeatureItem({
         </span>
       )}
 
-      <h3 className="mb-2 text-lg font-semibold text-text-primary">{title}</h3>
+      <h3 className="mb-2 text-lg font-semibold text-text-primary">{title.toUpperCase()}</h3>
       <p className="text-sm text-text-secondary">{description}</p>
 
       {href && (
