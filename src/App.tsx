@@ -6,6 +6,7 @@ import { AboutSection } from "@/sections/About";
 import { CategoriesSection } from "@/sections/Categories";
 import { DisciplinesSection } from "@/sections/Disciplines";
 import { WhyRegisterSection } from "@/sections/WhyRegister";
+import { SponsorsSection } from "@/sections/Sponsors";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <CategoriesSection />
       <DisciplinesSection />
       <WhyRegisterSection />
+      <SponsorsSection />
     </RootLayout>
   );
 }
