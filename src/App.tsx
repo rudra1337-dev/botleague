@@ -1,8 +1,12 @@
+import { RootLayout } from "@/components/layout/RootLayout";
+import { HeroSection } from "@/sections/Hero";
 
 
 function App() {
   return (
-    <h1>Project Initialized</h1>
+    <RootLayout>
+      <HeroSection />
+    </RootLayout>
   );
 }
 
