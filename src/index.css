@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand accents — two colors, two distinct jobs (see Phase 9) */
+  --color-brand-red: #e11d2e;      /* primary action / urgency: CTAs, LIVE badge */
+  --color-brand-red-hover: #c8192a;
+  --color-brand-gold: #d4a017;     /* secondary highlight / "featured" marker */
+
+  /* Surfaces — dark theme layering */
+  --color-surface-base: #0a0a0d;     /* page background */
+  --color-surface-raised: #16161b;   /* cards */
+  --color-surface-raised-2: #1e1e24; /* nested cards / inputs */
+  --color-surface-border: #2a2a32;
+
+  /* Text */
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #9ca3af;
+  --color-text-muted: #6b7280;
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-base text-text-primary font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  /* Respect reduced-motion preference globally (Phase 12) */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
